@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 背景填充色 -->
+    <solid android:color="@color/wwlogo"/>
+	<!-- 圆角边框 -->
+	<corners android:radius="10dp"/>
+	<!-- 四周留白 -->
+	 <padding android:bottom="3dp"    
+                android:left="3dp"    
+                android:right="3dp"    
+                android:top="3dp" />
+	 <!-- 描边 -->
+	  <stroke android:width="5dp" 
+	      android:color="@color/transparent" />
+</shape>

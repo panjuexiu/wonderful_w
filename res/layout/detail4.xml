@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_marginLeft="10dp"
+			    android:orientation="vertical">
+			    	<ImageView
+			            android:id="@+id/detail_iv_act1"
+			            android:layout_width="110dp"
+			            android:layout_height="154dp"
+			            android:src="@drawable/actress_1" />
+			    	<TextView
+				        android:id="@+id/detail_tv_actor1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/actor" />
+			    	<TextView
+				        android:id="@+id/detail_tv_role1"
+				        android:textColor="@color/gray"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/role" />
+			</LinearLayout>
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_marginLeft="5dp"
+			    android:orientation="vertical">
+			    	<ImageView
+			            android:id="@+id/detail_iv_act2"
+			            android:layout_width="110dp"
+			            android:layout_height="154dp"
+			            android:src="@drawable/actress_2" />
+			    	<TextView
+				        android:id="@+id/detail_tv_actor2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/actor" />
+			    	<TextView
+				        android:id="@+id/detail_tv_role2"
+				        android:textColor="@color/gray"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/role" />
+			</LinearLayout>
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_marginLeft="5dp"
+			    android:orientation="vertical">
+			    	<ImageView
+			            android:id="@+id/detail_iv_act3"
+			            android:layout_width="110dp"
+			            android:layout_height="154dp"
+			            android:src="@drawable/actor_1" />
+			    	<TextView
+				        android:id="@+id/detail_tv_actor3"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/actor" />
+			    	<TextView
+				        android:id="@+id/detail_tv_role3"
+				        android:textColor="@color/gray"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/role" />
+			</LinearLayout>
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_marginLeft="5dp"
+			    android:orientation="vertical">
+			    	<ImageView
+			            android:id="@+id/detail_iv_act4"
+			            android:layout_width="110dp"
+			            android:layout_height="154dp"
+			            android:src="@drawable/actress_3" />
+			    	<TextView
+				        android:id="@+id/detail_tv_actor4"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/actor" />
+			    	<TextView
+				        android:id="@+id/detail_tv_role4"
+				        android:textColor="@color/gray"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/role" />
+			</LinearLayout>
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_marginLeft="5dp"
+			    android:orientation="vertical">
+			    	<ImageView
+			            android:id="@+id/detail_iv_act5"
+			            android:layout_width="110dp"
+			            android:layout_height="154dp"
+			            android:src="@drawable/actress_4" />
+			    	<TextView
+				        android:id="@+id/detail_tv_actor5"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/actor" />
+			    	<TextView
+				        android:id="@+id/detail_tv_role5"
+				        android:textColor="@color/gray"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/role" />
+			</LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>
