@@ -55,11 +55,14 @@ public class MainActivity extends FragmentActivity implements OnItemClickListene
 		//不显示title bar--总是报错--是不是位置不对
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		//测试--一个一个来吧
-		setContentView(R.layout.detail);
-		//initTabLine();
-		//initView();
-		//initList();
+		setContentView(R.layout.activity_main);
+		//注册--sign up
+//		initTabLine();
+//		initView();
+		//主页--home
+//		initList();
 	}
+	//主页--home
 	private void initList() {
 		mListView=(ListView) findViewById(R.id.home_lv_filmList);
 		dataList=new ArrayList<Map<String,Object>>();
@@ -80,6 +83,7 @@ public class MainActivity extends FragmentActivity implements OnItemClickListene
 		mListView.setOnItemClickListener(MainActivity.this);
 		mListView.setOnScrollListener(MainActivity.this);
 	}
+	//注册--sign up
 	private void initTabLine() {
 		// 这个变量一直获取不到
 		mHalfScreen=(ImageView) findViewById(R.id.signup_iv_half);
@@ -91,6 +95,7 @@ public class MainActivity extends FragmentActivity implements OnItemClickListene
 		mLayoutParams.width=mHalf;
 		mHalfScreen.setLayoutParams(mLayoutParams);
 	}
+	//注册--sign up
 	private void initView() {
 		// TODO Auto-generated method stub
 		mViewPager=(ViewPager) findViewById(R.id.sign_vp);

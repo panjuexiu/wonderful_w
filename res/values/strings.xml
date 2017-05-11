@@ -47,5 +47,8 @@
     <string name="ranking">票房排行</string>
     <string name="weekly">周票房 (万)</string>
     <string name="total">累计票房 (万)</string>
+    <string name="comment">影评</string>
+    <string name="commenting">写影评</string>
+    <string name="time">05-10 17:15</string>
     
 </resources>
