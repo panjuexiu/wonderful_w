@@ -53,8 +53,11 @@
         android:textSize="20sp"
         android:id="@+id/log_btn_login"
         android:gravity="center"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
         android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_buy_now"
         android:text="@string/login" />
 
     <LinearLayout
@@ -67,6 +70,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/wwlogo"
+            android:background="@drawable/detail_btn"
             android:text="@string/signup" />
         <Button
             android:id="@+id/log_btn_forget"
@@ -74,6 +79,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/wwlogo"
+            android:background="@drawable/detail_btn"
             android:text="@string/forgetPass" />
 
     </LinearLayout>

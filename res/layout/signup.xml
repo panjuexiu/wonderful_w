@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.wonderful_watch.MainActivity"
+    tools:context="com.lilu.wonderful_watch.activity.MainActivity"
     tools:ignore="MergeRootFrame" >
     <include layout="@layout/signup1"/>
     <include layout="@layout/signup2"/>

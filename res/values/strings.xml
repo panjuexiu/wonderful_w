@@ -50,5 +50,8 @@
     <string name="comment">影评</string>
     <string name="commenting">写影评</string>
     <string name="time">05-10 17:15</string>
+    <string name="cinema">影院名</string>
+    <string name="address">影院地址</string>
+    
     
 </resources>
