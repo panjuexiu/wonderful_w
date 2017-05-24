@@ -52,6 +52,8 @@
     <string name="time">05-10 17:15</string>
     <string name="cinema">影院名</string>
     <string name="address">影院地址</string>
-    
+    <string name="last">时长</string>
+    <string name="language">语言</string>
+    <string name="price">价格</string>
     
 </resources>
