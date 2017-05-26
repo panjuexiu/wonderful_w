@@ -10,8 +10,10 @@ import com.lilu.wonderful_watch.activity.adapter.MyPagerAdapter;
 import com.lilu.wonderful_watch.activity.adapter.MySimpleAdapter;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.PagerTabStrip;
+import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.Window;
@@ -59,6 +61,7 @@ public class CinemaActivity extends Activity {
 	private View view1;
 	private View view2;
 	//viewPager的标题
+	//private PagerTabStrip tab;
 	private PagerTabStrip tab;
 	private List<String> titleList;
 	protected void onCreate(Bundle savedInstanceState) {
@@ -83,7 +86,7 @@ public class CinemaActivity extends Activity {
 	//viewPager
 	private void initView() {
 		dateList=new ArrayList<View>();
-		//view对象是ViewPager的数据源
+		//view对象是ViewPager的数据源--这样就不用写fragment了？？？
 		view1 = View.inflate(this, R.layout.cinema3, null);
 		view2 = View.inflate(this, R.layout.cinema4, null);
 		dateList.add(view1);
@@ -92,6 +95,16 @@ public class CinemaActivity extends Activity {
 		titleList=new ArrayList<String>();
 		titleList.add("今天05-05");
 		titleList.add("明天05-06");
+		//设置PagerTabStrip的属性
+		tab=(PagerTabStrip) findViewById(R.id.tab);
+		tab.setBackgroundColor(Color.WHITE);
+		tab.setTextColor(Color.parseColor("#EC223A"));
+		//通过设置透明度来修改未选中tab项的字体颜色
+		tab.setNonPrimaryAlpha(0.2f);
+		//将长线去掉
+		tab.setDrawFullUnderline(false);
+		//短线颜色
+		tab.setTabIndicatorColor(Color.parseColor("#EC223A"));
 		MyPagerAdapter mPagerAdapter=new MyPagerAdapter(dateList,titleList);
 		viewPager=(ViewPager) findViewById(R.id.cinema_date);
 		viewPager.setAdapter(mPagerAdapter);
