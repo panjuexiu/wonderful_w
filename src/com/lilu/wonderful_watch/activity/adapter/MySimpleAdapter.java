@@ -61,5 +61,7 @@ public class MySimpleAdapter extends SimpleAdapter implements OnClickListener {
 		//Toast.makeText(v.getContext(), "跳转到选座界面", Toast.LENGTH_LONG).show();
 		Intent intent = new Intent(v.getContext(),SeatActivity.class);
 		CinemaActivity.cinemaActivity.startActivity(intent);
+		//直接跳转到支付界面
+		
 	}
 }
