@@ -40,6 +40,7 @@ public class HomeActivity extends Activity implements OnItemClickListener,OnScro
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		//视图显示
 		setContentView(R.layout.home);
+		//初始化
 		homeActivity = this;
 		//主页--home
 		initList();

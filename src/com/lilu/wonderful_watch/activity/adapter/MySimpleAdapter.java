@@ -6,6 +6,7 @@ import java.util.Map;
 import com.lilu.wonderful_watch.R;
 import com.lilu.wonderful_watch.activity.CinemaActivity;
 import com.lilu.wonderful_watch.activity.HomeActivity;
+import com.lilu.wonderful_watch.activity.SeatActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -56,7 +57,9 @@ public class MySimpleAdapter extends SimpleAdapter implements OnClickListener {
 	}
 	@Override
 	public void onClick(View v) {
-		// 上下文不能写this---
-		Toast.makeText(v.getContext(), "跳转到选座界面", Toast.LENGTH_LONG).show();
+		// 上下文不能写this---设置跳转为什么不对
+		//Toast.makeText(v.getContext(), "跳转到选座界面", Toast.LENGTH_LONG).show();
+		Intent intent = new Intent(v.getContext(),SeatActivity.class);
+		CinemaActivity.cinemaActivity.startActivity(intent);
 	}
 }

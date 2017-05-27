@@ -64,12 +64,15 @@ public class CinemaActivity extends Activity {
 	//private PagerTabStrip tab;
 	private PagerTabStrip tab;
 	private List<String> titleList;
+	//为了在非Activity类里面使用Activity的startActivity方法
+	public static CinemaActivity cinemaActivity;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//注意位置
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		//视图显示
 		setContentView(R.layout.cinema);
+		cinemaActivity=this;
 		//初始化ViewPager
 		initView();
 		timeList1=(ListView) view1.findViewById(R.id.cinema_lv_timeList1);
