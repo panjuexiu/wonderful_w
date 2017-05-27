@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginBottom="50dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/seat8_ib_seat1"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/seat_1" />
+
+    <ImageButton
+        android:id="@+id/seat8_ib_seat2"
+        android:layout_marginLeft="5dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/seat_1" />
+
+    <ImageButton
+        android:id="@+id/seat8_ib_seat3"
+        android:layout_marginLeft="5dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/seat_1" />
+    
+    <ImageButton
+        android:id="@+id/seat8_ib_seat4"
+        android:layout_marginLeft="5dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/seat_1" />
+    
+    <ImageButton
+        android:id="@+id/seat8_ib_seat5"
+        android:layout_marginLeft="5dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/seat_1" />
+    
+    <ImageButton
+        android:id="@+id/seat8_ib_seat6"
+        android:layout_marginLeft="5dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/seat_1" />
+
+
+</LinearLayout>

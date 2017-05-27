@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/seat1"/>
+    <include layout="@layout/seat2"/>
+    <include layout="@layout/seat3"/>
+    <include layout="@layout/seat4"/>
+    <include layout="@layout/seat5"/>
+    <include layout="@layout/seat6"/>
+    <include layout="@layout/seat7"/>
+    <include layout="@layout/seat8"/>
+    <include layout="@layout/seat9"/>
+    
+</LinearLayout>

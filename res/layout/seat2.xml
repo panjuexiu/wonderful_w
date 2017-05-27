@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="2px"
+        android:layout_alignParentLeft="true"
+        android:background="@color/gray_cc" />
+    
+    <TextView
+        android:id="@+id/seat_tv_cinema"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/cinema" />
+
+    <TextView
+        android:id="@+id/seat_tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/wwlogo"
+        android:layout_alignLeft="@+id/seat_tv_cinema"
+        android:layout_below="@+id/seat_tv_cinema"
+        android:layout_marginTop="10dp"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/seat_tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/wwlogo"
+        android:layout_alignBaseline="@+id/seat_tv_address"
+        android:layout_alignBottom="@+id/seat_tv_address"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/seat_tv_address"
+        android:text="@string/language" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="2px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seat_tv_address"
+        android:background="@color/gray_cc" />
+
+</RelativeLayout>

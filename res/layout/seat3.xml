@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/seat_ib_select"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/seat_1" />
+
+    <TextView
+        android:id="@+id/seat_tv_select"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectable" />
+
+    <ImageButton
+        android:id="@+id/seat_ib_already"
+        android:layout_marginLeft="25dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/seat_2" />
+
+    <TextView
+        android:id="@+id/seat_tv_already"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selected_already" />
+
+    <ImageButton
+        android:id="@+id/seat_ib_sold"
+        android:layout_marginLeft="25dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/seat_3" />
+
+    <TextView
+        android:id="@+id/seat_tv_sold"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sold_already" />
+
+</LinearLayout>

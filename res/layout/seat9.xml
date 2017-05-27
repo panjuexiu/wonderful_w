@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/seat_tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+  	 	android:layout_marginLeft="20dp"
+        android:layout_above="@+id/seat_tv_number"
+        android:layout_marginTop="10dp"
+        android:text="@string/phone" />
+    
+    <TextView
+        android:id="@+id/seat_tv_number"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seat_tv_phone"
+        android:layout_above="@+id/seat_btn_lock"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/phone_number" />
+    
+    <TextView 
+        android:id="@+id/seat_tv_pri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/seat_tv_number"
+        android:layout_toLeftOf="@+id/seat_tv_pric"
+        android:text="@string/price"/>
+    
+    <TextView
+        android:id="@+id/seat_tv_pric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seat_tv_pri"
+        android:layout_toLeftOf="@+id/seat_tv_price"
+        android:text="@string/tewnty"
+        android:textColor="@color/wwlogo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/seat_tv_price"
+        android:textColor="@color/wwlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/seat_tv_number"
+        android:layout_marginRight="20dp"
+        android:text="@string/yuan" />
+    
+    <Button
+        android:id="@+id/seat_btn_lock"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_buy_now"
+        android:text="@string/lock" />
+
+
+</RelativeLayout>
