@@ -62,5 +62,11 @@
     <string name="phone_number">136****3698</string>
     <string name="tewnty">20</string>
     <string name="yuan">元</string>
+    <string name="video_hall">VIP影厅</string>
+    <string name="seat">座位</string>
+    <string name="rule">退票改签须知</string>
+    <string name="cant">不可改签</string>
+    <string name="to_pay">应付</string>
+    <string name="pay">立即付款</string>
     
 </resources>

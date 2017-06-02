@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="2px"
+        android:layout_above="@+id/pay_tv_pri"
+        android:layout_alignParentLeft="true"
+        android:background="@color/gray_cc" />
+    
+    <TextView 
+        android:id="@+id/pay_tv_pri"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/pay_tv_price"
+        android:layout_toLeftOf="@+id/pay_tv_pric"
+        android:text="@string/to_pay"/>
+    
+    <TextView
+        android:id="@+id/pay_tv_pric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pay_tv_price"
+        android:layout_toLeftOf="@+id/pay_tv_price"
+        android:text="@string/tewnty"
+        android:textColor="@color/wwlogo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/pay_tv_price"
+        android:textColor="@color/wwlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/pay_btn_pay"
+        android:layout_marginRight="20dp"
+        android:text="@string/yuan" />
+    
+    <Button
+        android:id="@+id/pay_btn_pay"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_buy_now"
+        android:text="@string/pay" />
+    
+
+</RelativeLayout>

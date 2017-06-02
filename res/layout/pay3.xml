@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="2px"
+        android:layout_alignParentLeft="true"
+        android:background="@color/gray_cc" />
+    
+    <TextView
+        android:id="@+id/pay_tv_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/rule"
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/pay_tv_cant"
+        android:textColor="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pay_tv_rule"
+        android:layout_below="@+id/pay_tv_rule"
+        android:layout_marginTop="10dp"
+        android:text="@string/cant" />
+
+    
+
+</RelativeLayout>

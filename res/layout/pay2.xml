@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <TextView
+        android:id="@+id/pay_tv_film"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/filmName"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pay_tv_cinema"
+        android:textColor="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pay_tv_film"
+        android:layout_below="@+id/pay_tv_film"
+        android:layout_marginTop="10dp"
+        android:text="@string/cinema" />
+    
+    <TextView
+        android:id="@+id/pay_tv_video"
+        android:textColor="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pay_tv_cinema"
+        android:layout_toRightOf="@+id/pay_tv_film"
+        android:text="@string/video_hall" />
+    
+    <TextView
+        android:id="@+id/pay_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/wwlogo"
+        android:layout_alignLeft="@+id/pay_tv_cinema"
+        android:layout_below="@+id/pay_tv_cinema"
+        android:layout_marginTop="10dp"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/pay_tv_language"
+        android:textColor="@color/wwlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pay_tv_time"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/pay_tv_time"
+        android:text="@string/language" />
+
+    <TextView
+        android:id="@+id/pay_tv_seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pay_tv_time"
+        android:layout_below="@+id/pay_tv_time"
+        android:layout_marginTop="10dp"
+        android:text="@string/seat"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/pay_tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pay_tv_seat"
+        android:layout_below="@+id/pay_tv_seat"
+        android:layout_marginTop="10dp"
+        android:text="@string/phone_number"
+        android:textColor="@color/gray" />
+    
+    
+
+</RelativeLayout>
