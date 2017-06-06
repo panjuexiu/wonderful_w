@@ -3,13 +3,6 @@
     android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="2px"
-        android:layout_alignParentLeft="true"
-        android:background="@color/gray_cc" />
     
     <TextView
         android:id="@+id/seat_tv_cinema"
@@ -37,10 +30,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/wwlogo"
-        android:layout_alignBaseline="@+id/seat_tv_address"
-        android:layout_alignBottom="@+id/seat_tv_address"
+        android:layout_alignBaseline="@+id/seat_tv_time"
+        android:layout_alignBottom="@+id/seat_tv_time"
         android:layout_marginLeft="7dp"
-        android:layout_toRightOf="@+id/seat_tv_address"
+        android:layout_toRightOf="@+id/seat_tv_time"
         android:text="@string/language" />
 
     <View
@@ -48,7 +41,7 @@
         android:layout_marginTop="10dp"
         android:layout_height="2px"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/seat_tv_address"
+        android:layout_below="@+id/seat_tv_time"
         android:background="@color/gray_cc" />
 
 </RelativeLayout>

@@ -15,7 +15,7 @@
         android:orientation="horizontal" >
 	    <ImageButton
 	        android:id="@+id/cinema_ib_back"
-	        android:src="@drawable/back"
+	        android:background="@drawable/back"
 	        android:layout_width="30dp"
 	        android:layout_height="30dp"
 	        />

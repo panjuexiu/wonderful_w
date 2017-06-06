@@ -13,12 +13,13 @@
         android:layout_centerVertical="true"
         android:gravity="center"
         android:orientation="horizontal" >
+
 	    <ImageButton
 	        android:id="@+id/pay_ib_back"
-	        android:src="@drawable/back"
 	        android:layout_width="30dp"
 	        android:layout_height="30dp"
-	        />
+	        android:background="@drawable/back" />
+
     </LinearLayout>
     
     <LinearLayout
