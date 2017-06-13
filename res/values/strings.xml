@@ -7,10 +7,13 @@
     <string name="userName">用户名</string>
     <string name="entryName">请输入已注册的手机号或邮箱</string>
     <string name="userPass">密   码</string>
+    <string name="newPass">新密码</string>
     <string name="entryPass">请输入密码</string>
+    <string name="setPass">请输入新密码</string>
     <string name="signin">立即登录</string>
     <string name="signup">立即注册</string>
     <string name="forgetPass">忘记密码？</string>
+    <string name="updatePass">修改密码</string>
     <string name="register">注册</string>
     <string name="cell">手机注册</string>
     <string name="mail">邮箱注册</string>
@@ -46,9 +49,9 @@
     <string name="ranking">票房排行</string>
     <string name="weekly">周票房 (万)</string>
     <string name="total">累计票房 (万)</string>
-    <string name="comment">影评</string>
+    <string name="comment">赞~</string>
     <string name="commenting">写影评</string>
-    <string name="time">05-10 17:15</string>
+    <string name="time">05-04 17:15</string>
     <string name="cinema">影院名</string>
     <string name="address">影院地址</string>
     <string name="last">时长</string>
@@ -68,5 +71,6 @@
     <string name="cant">不可改签</string>
     <string name="to_pay">应付</string>
     <string name="pay">立即付款</string>
+    <string name="pay_the_bill">支付订单</string>
     
 </resources>

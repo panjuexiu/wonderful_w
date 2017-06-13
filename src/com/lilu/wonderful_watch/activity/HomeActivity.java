@@ -5,8 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.litepal.crud.DataSupport;
+
 import com.lilu.wonderful_watch.R;
 import com.lilu.wonderful_watch.activity.adapter.MySimpleAdapter;
+import com.lilu.wonderful_watch.model.Movie;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -33,6 +36,7 @@ public class HomeActivity extends Activity implements OnItemClickListener,OnScro
 	private List<Map<String,Object>> dataList;
 	//为了在非Activity类里面使用Activity的startActivity方法
 	public static HomeActivity homeActivity;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -44,6 +48,7 @@ public class HomeActivity extends Activity implements OnItemClickListener,OnScro
 		homeActivity = this;
 		//主页--home
 		initList();
+		
 	}
 	//主页--home
 	private void initList() {
@@ -51,13 +56,19 @@ public class HomeActivity extends Activity implements OnItemClickListener,OnScro
 		dataList=new ArrayList<Map<String,Object>>();
 		mSimpleAdapter=new MySimpleAdapter(this,dataList,R.layout.home2,dataFrom,dataTo);
 		
+		
+		//从数据库查询数据
+		List<Movie> movies = DataSupport.select("id", "actorsdescription", "name", "post", "directors").order("publishtime desc").find(Movie.class);
+		
 		//如何获取到值
-		for (int i = 0; i < 10; i++) {
+		for (Movie movie : movies) {
 			Map<String,Object> map=new HashMap<String,Object>();
 			map.put("post", R.drawable.film);
-			map.put("film", "初始化电影名"+i);
-			map.put("director", "初始化导演");
-			map.put("cast", "初始化演职员表");
+			map.put("id", movie.getId());
+			map.put("film", movie.getName());
+			map.put("director", movie.getDirectors());
+			map.put("post", movie.getPost());
+			map.put("cast", movie.getActorsDescription());
 			dataList.add(map);
 		}
 		//将适配器与组件绑定
@@ -79,7 +90,7 @@ public class HomeActivity extends Activity implements OnItemClickListener,OnScro
 		// 接口的方法--这个其实用不到吖吖吖
 		switch (scrollState) {
 		case SCROLL_STATE_FLING:
-			Log.i("tag--", "手指已经离开屏幕，视图还在滑动");
+			/*Log.i("tag--", "手指已经离开屏幕，视图还在滑动");
 			//向下刷新
 			Map<String,Object> fresh=new HashMap<String,Object>();
 			//刷新加载--3.17
@@ -89,7 +100,7 @@ public class HomeActivity extends Activity implements OnItemClickListener,OnScro
 			fresh.put("cast", "新增演职员表");
 			dataList.add(fresh);
 			//刷新ui界面
-			mSimpleAdapter.notifyDataSetChanged();
+			mSimpleAdapter.notifyDataSetChanged();*/
 			break;
 		case SCROLL_STATE_IDLE:
 			Log.i("tag--", "视图已经停止");
@@ -102,8 +113,10 @@ public class HomeActivity extends Activity implements OnItemClickListener,OnScro
 	//主页--home
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		int movieId = (int) dataList.get(position).get("id");
 		//点击item进入电影详情
-		Intent  intent=new Intent(getApplicationContext(),DetailActivity.class);
+		Intent  intent=new Intent(getApplicationContext(), DetailActivity.class);
+		intent.putExtra("movieId", movieId);
 		startActivity(intent);
 		
 		

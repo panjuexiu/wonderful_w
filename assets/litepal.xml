@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="lptest" />
+
+    <version value="9" />
+
+    <list>
+	    <mapping class="com.lilu.wonderful_watch.model.Actor" />
+	    <mapping class="com.lilu.wonderful_watch.model.Cinema" />
+	    <mapping class="com.lilu.wonderful_watch.model.Movie" />
+	    <mapping class="com.lilu.wonderful_watch.model.User" />
+	    <mapping class="com.lilu.wonderful_watch.model.Comment" />
+    </list>
+</litepal>
